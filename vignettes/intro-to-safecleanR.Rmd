@@ -1,0 +1,80 @@
+---
+title: "Introduction to SafeCleanR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to SafeCleanR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(project)
+```
+# Introduction
+
+The `SafeCleanR` package contains simple tools for:
+- cleaning missing values,
+- joining datasets,
+- creating summary statistics.
+
+# Example Dataset
+
+```{r}
+student_data
+```
+
+# Cleaning Missing Values
+
+Replace missing values with the mean:
+
+```{r}
+clean_missing(student_data, "study_hours", method = "mean")
+```
+
+Remove rows with missing values:
+
+```{r}
+clean_missing(student_data, "final_grade", method = "remove")
+```
+
+# Joining Data
+
+Create another dataset:
+
+```{r}
+advisor_data <- data.frame(
+  student_id = c(101, 102, 103, 104),
+  advisor = c(
+    "Dr. Smith",
+    "Dr. Lee",
+    "Dr. Brown",
+    "Dr. Patel"
+  )
+)
+```
+
+Join the datasets:
+
+```{r}
+safe_join(student_data, advisor_data, by = "student_id")
+```
+
+# Summary Statistics
+
+Generate summary statistics:
+
+```{r}
+quick_summary(student_data)
+```
+
+# Conclusion
+
+`SafeCleanR` provides simple tools for safer data cleaning
+and analysis in R.
