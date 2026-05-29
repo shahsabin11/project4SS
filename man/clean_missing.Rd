@@ -2,9 +2,7 @@
 % Please edit documentation in R/clean_missing.R
 \name{clean_missing}
 \alias{clean_missing}
-\title{Clean Missing Values in a Data Frame
-Handles missing values in a selected column using different strategies:
-removal, mean, median, or mode imputation}
+\title{Clean Missing Values in a Data Frame}
 \usage{
 clean_missing(data, column, method = "mean")
 }
@@ -20,7 +18,6 @@ clean_missing(data, column, method = "mean")
 A cleaned data frame with missing values handled
 }
 \description{
-Clean Missing Values in a Data Frame
 Handles missing values in a selected column using different strategies:
 removal, mean, median, or mode imputation
 }

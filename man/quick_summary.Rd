@@ -2,9 +2,7 @@
 % Please edit documentation in R/quick_summary.R
 \name{quick_summary}
 \alias{quick_summary}
-\title{Generate Quick Summary Statistics for Numeric Columns
-Produces a summary table for all numeric columns in a data frame,
-including mean, median, standard deviation, min, max, and missing values}
+\title{Generate Quick Summary Statistics for Numeric Columns}
 \usage{
 quick_summary(data)
 }
@@ -15,7 +13,6 @@ quick_summary(data)
 A data frame containing summary statistics for each numeric column
 }
 \description{
-Generate Quick Summary Statistics for Numeric Columns
 Produces a summary table for all numeric columns in a data frame,
 including mean, median, standard deviation, min, max, and missing values
 }

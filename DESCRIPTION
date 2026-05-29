@@ -1,9 +1,11 @@
-Package: project
-Title: What the Package Does (One Line, Title Case)
+Package: safecleanr
+Title: Simple and Safe Tools for Cleaning and Summarizing Data
 Version: 0.0.0.9000
-Authors@R: 
-    person("Sabin Ku", "Shah", , "shahs@lawrence.edu", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Sabin Ku", "Shah", , "shahs@lawrence.edu", role = c("aut", "cre"))
+Description: Provides beginner-friendly tools for common data cleaning tasks.
+    Functions include handling missing values via removal or imputation,
+    safely joining two data frames with key validation, and generating
+    quick summary statistics for numeric columns.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -11,11 +13,13 @@ RoxygenNote: 8.0.0
 Imports:
     checkmate,
     dplyr
-Depends: 
+Depends:
     R (>= 3.5)
 LazyData: true
-Suggests: 
+Suggests:
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
-URL: https://shahsabin11.github.io/project4SS/
+URL: https://shahsabin11.github.io/safecleanr/
+Config/testthat/edition: 3

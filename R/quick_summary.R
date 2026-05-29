@@ -1,4 +1,5 @@
 #' Generate Quick Summary Statistics for Numeric Columns
+#'
 #' Produces a summary table for all numeric columns in a data frame,
 #' including mean, median, standard deviation, min, max, and missing values
 #'
@@ -15,10 +16,8 @@
 #'  quick_summary(df)
 #'
 #' @export
-quick_summary <- function(data) quick_summary <- function(data) {
-
+quick_summary <- function(data) {
   checkmate::assert_data_frame(data)
-
   numeric_data <- data[, sapply(data, is.numeric), drop = FALSE]
 
   if (ncol(numeric_data) == 0) {
@@ -32,7 +31,7 @@ quick_summary <- function(data) quick_summary <- function(data) {
     SD = sapply(numeric_data, stats::sd, na.rm = TRUE),
     Min = sapply(numeric_data, min, na.rm = TRUE),
     Max = sapply(numeric_data, max, na.rm = TRUE),
-    Missing_Values = sapply(numeric_data, function(x) stats::na.omit(x))
+    Missing_Values = sapply(numeric_data, function(x) sum(is.na(x)))  # fixed
   )
 
   return(summary_table)
