@@ -1,8 +1,7 @@
-# Clean Missing Values in a Data Frame Handles missing values in a selected column using different strategies: removal, mean, median, or mode imputation
+# Clean Missing Values in a Data Frame
 
-Clean Missing Values in a Data Frame Handles missing values in a
-selected column using different strategies: removal, mean, median, or
-mode imputation
+Handles missing values in a selected column using different strategies:
+removal, mean, median, or mode imputation
 
 ## Usage
 
