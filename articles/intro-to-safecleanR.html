@@ -64,7 +64,7 @@
     
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://shahsabin11.github.io/project4SS/">project</a></span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://shahsabin11.github.io/safecleanr/">safecleanr</a></span><span class="op">)</span></span></code></pre></div>
 <div class="section level2">
 <h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
@@ -157,7 +157,12 @@ statistics.</p>
 </h2>
 <p>Generate summary statistics:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/quick_summary.html">quick_summary</a></span><span class="op">(</span><span class="va">student_data</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/quick_summary.html">quick_summary</a></span><span class="op">(</span><span class="va">student_data</span><span class="op">)</span></span>
+<span><span class="co">#&gt;                  Column      Mean Median       SD Min Max Missing_Values</span></span>
+<span><span class="co">#&gt; student_id   student_id 104.50000  104.5 2.449490 101 108              0</span></span>
+<span><span class="co">#&gt; study_hours study_hours  16.66667   16.5 5.501515  10  25              2</span></span>
+<span><span class="co">#&gt; attendance   attendance  88.33333   89.0 5.316641  80  95              2</span></span>
+<span><span class="co">#&gt; final_grade final_grade  84.28571   85.0 8.199884  73  96              1</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="conclusion">Conclusion<a class="anchor" aria-label="anchor" href="#conclusion"></a>

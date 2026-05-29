@@ -1,9 +1,9 @@
-pandoc: 3.8.3
+pandoc: 3.6.3
 pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
   intro-to-safecleanR: intro-to-safecleanR.html
-last_built: 2026-05-29T00:04Z
+last_built: 2026-05-29T00:07Z
 urls:
-  reference: https://shahsabin11.github.io/project4SS/reference
-  article: https://shahsabin11.github.io/project4SS/articles
+  reference: https://shahsabin11.github.io/safecleanr/reference
+  article: https://shahsabin11.github.io/safecleanr/articles
